@@ -1,0 +1,14 @@
+version: '4'
+services:
+  order-postgres:
+    image: 'postgres:17'
+    container_name: order-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: igor
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: order_service
+    ports:
+      - '5434:5432'
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data

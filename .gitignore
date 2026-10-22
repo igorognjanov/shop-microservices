@@ -1,0 +1,5 @@
+# Postgres volume data
+**/data/
+.DS_Store
+target/
+.idea/

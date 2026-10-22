@@ -1,0 +1,6 @@
+inventory:
+  url: "http://localhost:${wiremock.server.port}"
+
+server:
+  error:
+    include-message: always
